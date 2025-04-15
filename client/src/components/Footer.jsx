@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container px-4 py-8 md:px-6">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           <div className="space-y-4">
-            <h3 className="text-lg font-bold text-[#4F6BED]">CampusExchange</h3>
+            <h3 className="text-lg font-bold text-[#4F6BED]">AULExchange</h3>
             <p className="text-sm text-muted-foreground">
               The marketplace for students to buy, sell, and trade items on campus.
             </p>
@@ -83,7 +83,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-          <p>© {new Date().getFullYear()} CampusExchange. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} AULExchange. All rights reserved.</p>
         </div>
       </div>
     </footer>
