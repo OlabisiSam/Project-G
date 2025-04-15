@@ -17,9 +17,9 @@ const CTA = () => {
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row">
                   <button
-                    className="bg-white text-[#4F6BED] hover:bg-white/90"
+                    className="bg-white text-[#4F6BED] hover:bg-white/90 p-2 rounded-lg"
                     size="lg"
-                    asChild
+                    
                   >
                     <a href="/register">Sign Up Now</a>
                   </button>

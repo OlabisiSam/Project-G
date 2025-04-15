@@ -34,10 +34,10 @@ const Hero = () => {
             </div>
             <div className="flex items-center justify-center">
               <img
-                src="/path/to/image.jpg"
+                src="aul.jpg"
                 alt="description"
                 loading="lazy"
-                className="rounded-xl "
+                className="w-full rounded-lg"
               />
             </div>
           </div>
