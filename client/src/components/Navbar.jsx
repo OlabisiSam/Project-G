@@ -27,21 +27,21 @@ export default function Navbar() {
           >
             <FaBars size={20} />
           </button>
-          <a to="/" className="text-xl font-bold text-[#4F6BED] hidden md:block">
+          <Link to="/" className="text-xl font-bold text-[#4F6BED] hidden md:block">
             AULExchange
-          </a>
-          <a to="/" className="text-xl font-bold text-[#4F6BED] md:hidden">
-            CE
-          </a>
+          </Link>
+          <Link to="/" className="text-xl font-bold text-[#4F6BED] md:hidden">
+            AE
+          </Link>
         </div>
 
         {/* Middle: Desktop Navigation */}
         <div className="hidden md:flex flex-1 items-center justify-center gap-4">
-          <a to="/categories/textbooks" className="text-sm font-medium">Textbooks</a>
-          <a to="/categories/furniture" className="text-sm font-medium">Furniture</a>
-          <a to="/categories/electronics" className="text-sm font-medium">Electronics</a>
-          <a to="/categories/other" className="text-sm font-medium">Other</a>
-          <a to="/sell" className="text-sm font-medium">Sell an Item</a>
+          <Link to="/categories/textbooks" className="text-sm font-medium">Textbooks</Link>
+          <Link to="/categories/furniture" className="text-sm font-medium">Furniture</Link>
+          <Link to="/categories/electronics" className="text-sm font-medium">Electronics</Link>
+          <Link to="/categories/other" className="text-sm font-medium">Other</Link>
+          <Link to="/sell" className="text-sm font-medium">Sell an Item</Link>
 
           <div className="relative max-w-xs w-full">
             <FaSearch className="absolute top-2.5 left-3 text-gray-400" />
@@ -77,10 +77,10 @@ export default function Navbar() {
               <div className="relative group">
                 <FaUserCircle size={28} className="text-gray-700 cursor-pointer" />
                 <div className="hidden group-hover:block absolute right-0 mt-2 w-40 bg-white shadow-md rounded-md z-10">
-                  <a to="/profile" className="block px-4 py-2 hover:bg-gray-100">Profile</a>
-                  <a to="/dashboard" className="block px-4 py-2 hover:bg-gray-100">My Listings</a>
-                  <a to="/messages" className="block px-4 py-2 hover:bg-gray-100">Messages</a>
-                  <a to="/saved" className="block px-4 py-2 hover:bg-gray-100">Saved Items</a>
+                  <Link to="/profile" className="block px-4 py-2 hover:bg-gray-100">Profile</Link>
+                  <Link to="/dashboard" className="block px-4 py-2 hover:bg-gray-100">My Listings</Link>
+                  <Link to="/messages" className="block px-4 py-2 hover:bg-gray-100">Messages</Link>
+                  <Link to="/saved" className="block px-4 py-2 hover:bg-gray-100">Saved Items</Link>
                   <button
                     onClick={toggleLogin}
                     className="block w-full text-left px-4 py-2 hover:bg-gray-100"
@@ -92,18 +92,18 @@ export default function Navbar() {
             </>
           ) : (
             <>
-              <a to="/login" className="text-sm px-3 py-1 border rounded-md">
+              <Link to="/login" className="text-sm px-3 py-1 border rounded-md">
                 Log in
-              </a>
-              <a to="/register" className="text-sm px-3 py-1 bg-[#4F6BED] text-white rounded-md">
+              </Link>
+              <Link to="/register" className="text-sm px-3 py-1 bg-[#4F6BED] text-white rounded-md">
                 Sign up
-              </a>
-              <button
+              </Link>
+              {/* <button
                 onClick={toggleLogin}
                 className="text-sm px-3 py-1 border rounded-md hidden md:inline-block"
               >
                 Demo Login
-              </button>
+              </button> */}
             </>
           )}
         </div>

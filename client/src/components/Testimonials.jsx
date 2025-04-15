@@ -2,7 +2,7 @@ const Testimonials = () => {
   return (
     <div>
       <section className="bg-[#F0F4F8] py-12 md:py-16">
-        <div className="container px-4 md:px-6">
+        <div className="container px-4 md:px-6 ">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#2D3748]">
@@ -16,8 +16,8 @@ const Testimonials = () => {
           <div className="mt-8 grid gap-6 md:grid-cols-3">
             <div className="overflow-hidden">
               <div className="p-6">
-                <div className="flex flex-col space-y-4">
-                  <div className="flex items-center space-x-4">
+                <div className="flex flex-col space-y-4 shadow-lg p-2 rounded-lg">
+                  <div className="flex items-center space-x-4 ">
                     {/* <Image
                       src="/placeholder.svg"
                       alt="Student"
@@ -49,7 +49,7 @@ const Testimonials = () => {
             </div>
             <div className="overflow-hidden">
               <div className="p-6">
-                <div className="flex flex-col space-y-4">
+                <div className="flex flex-col space-y-4 rounded-lg shadow-lg p-2">
                   <div className="flex items-center space-x-4">
                     <img
                       src="/path/to/image.jpg"
@@ -75,7 +75,7 @@ const Testimonials = () => {
             </div>
             <div className="overflow-hidden">
               <div className="p-6">
-                <div className="flex flex-col space-y-4">
+                <div className="flex flex-col space-y-4 rounded-lg shadow-lg p-2">
                   <div className="flex items-center space-x-4">
                     {/* <Image
                       src="/placeholder.svg"

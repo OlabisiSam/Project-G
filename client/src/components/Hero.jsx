@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl text-[#2D3748]">
-                  Campus Marketplace for Students
+                  AUL Marketplace for Students
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
                   Buy, sell, or trade textbooks, furniture, and other items with
@@ -22,6 +22,7 @@ const Hero = () => {
                     className="bg-[#4F6BED] hover:bg-[#4F6BED]/90 p-2 rounded-lg text-white"
                     size="lg"
                   >
+                    Browse item
                     
                   </button>
                 

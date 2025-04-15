@@ -1,21 +1,36 @@
-import { useState } from 'react'
-import './App.css'
-import Homepage from './pages/Homepage';
-import Navbar from './components/Navbar';
+import { useState } from "react";
+import "./App.css";
+import Homepage from "./pages/Homepage";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Sell from "./components/Sell";
+import Signup from "./components/Signup";
 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div>
-      <Navbar/>
-      <Homepage/>
-   
+      <Router>
+        <Navbar />
+  
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/sell" element={<Sell/>}/>
+          <Route path="/register" element={<Signup/>}/>
+          {/* <Route path="/signup" element={<Signup />} /> */}
 
+          {/* <Route path="/about" element={<About />} /> */}
+
+          {/* <Route path="/login" element={<Login />} /> */}
+          
+        </Routes>
+        <Footer />
+      </Router>
     </div>
-   
-  )
+  );
 }
 
-export default App
+export default App;

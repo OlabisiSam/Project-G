@@ -8,6 +8,7 @@ import {
   FiShoppingBag,
   FiMessageSquare,
 } from "react-icons/fi";
+import Testimonials from "../components/Testimonials";
 
 import Hero from "../components/Hero";
 import Marketplace from "../components/Marketplace";
@@ -91,7 +92,7 @@ export default function Homepage() {
       
 
       {/* Testimonials Section */}
-      
+      <Testimonials/>
 
       {/* CTA Section */}
       <section className="py-12 md:py-16">
