@@ -1,8 +1,8 @@
 // components/FilterSidebar.jsx
-import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "@/components/ui/label";
-import { Slider } from "@/components/ui/slider";
-import { Button } from "@/components/ui/button";
+import { Checkbox } from "./ui/Checkbox";
+import { Label } from "./ui/Label";
+import { Slider } from "./ui/Slider";
+import { Button } from "./ui/Button";
 
 const conditions = ["Like New", "Excellent", "Good", "Fair"];
 

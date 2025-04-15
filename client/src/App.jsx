@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Sell from "./components/Sell";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import Category from "./components/Category";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/sell" element={<Sell/>}/>
           <Route path="/register" element={<Signup/>}/>
           <Route path="/login" element={<Login/>}/>
+          <Route path="/categories/:category" element={<Category/>}/>
           {/* <Route path="/signup" element={<Signup />} /> */}
 
           {/* <Route path="/about" element={<About />} /> */}

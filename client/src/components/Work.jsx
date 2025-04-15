@@ -53,7 +53,7 @@ const Work = () => {
             </div>
           </div>
           <div className="mt-8 flex justify-center">
-            <button className="bg-[#4F6BED] hover:bg-[#4F6BED]/90" asChild>
+            <button className="bg-[#4F6BED] hover:bg-[#4F6BED]/90 p-2" >
               <a href="/how-it-works">Learn More</a>
             </button>
           </div>

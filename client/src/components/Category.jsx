@@ -5,7 +5,8 @@ import { Checkbox } from "./ui/Checkbox"
 import { Label } from "./ui/Label"
 import { Slider } from "./ui/Slider"
 import { Badge } from "./ui/Badge"
-import { Filter } from "react-icons/fi"
+import FilterSidebar from "./FilterSidebar";
+import { FiFilter } from "react-icons/fi"
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from "./ui/Sheet"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/Select"
 
@@ -83,12 +84,13 @@ export default function Category() {
                   <div className="space-y-4">
                     <div>
                       <h4 className="mb-2 font-medium">Condition</h4>
-                      {['Like New', 'Excellent', 'Good', 'Fair'].map((condition) => (
+                      <FilterSidebar/>
+                      {/* {['Like New', 'Excellent', 'Good', 'Fair'].map((condition) => (
                         <div className="flex items-center space-x-2" key={condition}>
                           <Checkbox id={condition.toLowerCase()} />
                           <Label htmlFor={condition.toLowerCase()}>{condition}</Label>
                         </div>
-                      ))}
+                      ))} */}
                     </div>
                     <div>
                       <h4 className="mb-2 font-medium">Price Range</h4>
@@ -110,7 +112,7 @@ export default function Category() {
                 <Sheet>
                   <SheetTrigger asChild>
                     <Button variant="outline" size="sm">
-                      <Filter className="mr-2 h-4 w-4" /> Filters
+                      <FiFilter className="mr-2 h-4 w-4" /> Filters
                     </Button>
                   </SheetTrigger>
                   <SheetContent side="left">
@@ -119,7 +121,7 @@ export default function Category() {
                       <SheetDescription>Narrow down your search results</SheetDescription>
                     </SheetHeader>
                     <div className="mt-6 space-y-6">
-                      <div>
+                      {/* <div>
                         <h4 className="mb-2 font-medium">Condition</h4>
                         {['Like New', 'Excellent', 'Good', 'Fair'].map((condition) => (
                           <div className="flex items-center space-x-2" key={condition}>
@@ -127,7 +129,8 @@ export default function Category() {
                             <Label htmlFor={`mobile-${condition.toLowerCase()}`}>{condition}</Label>
                           </div>
                         ))}
-                      </div>
+                      </div> */}
+                      <FilterSidebar/>
                       <div>
                         <h4 className="mb-2 font-medium">Price Range</h4>
                         <Slider defaultValue={[0, 100]} max={200} step={1} />
