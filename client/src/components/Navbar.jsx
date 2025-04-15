@@ -113,11 +113,11 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden border-t">
           <nav className=" text-center flex flex-col px-4 py-4 space-y-2">
-            <a to="/categories/textbooks">Textbooks</a>
-            <a to="/categories/furniture">Furniture</a>
-            <a to="/categories/electronics">Electronics</a>
-            <a to="/categories/other">Other</a>
-            <a to="/sell">Sell an Item</a>
+            <Link to="/categories/textbooks">Textbooks</Link>
+            <Link to="/categories/furniture">Furniture</Link>
+            <Link to="/categories/electronics">Electronics</Link>
+            <Link to="/categories/other">Other</Link>
+            <Link to="/sell">Sell an Item</Link>
             <div className="relative mt-2">
               <FaSearch className="absolute top-2.5 left-3 text-gray-400" />
               <input
@@ -144,50 +144,5 @@ export default function Navbar() {
 }
 
 
-// import { FiSearch, FiChevronDown } from 'react-icons/fi';
 
-// const Navbar = () => {
-//   return (
-//     <header className="bg-white shadow-sm px-6 py-3 flex items-center justify-between">
-//       {/* Logo */}
-//       <div className="text-xl font-bold text-blue-600">
-//         Campus<span className="text-black">Exchange</span>
-//       </div>
-
-//       {/* Navigation + Search */}
-//       <div className="flex items-center gap-6 flex-1 mx-8">
-//         <nav className="flex gap-6 text-sm text-black whitespace-nowrap">
-//           <button className="flex items-center gap-1 hover:text-blue-600">
-//             Categories <FiChevronDown className="text-sm" />
-//           </button>
-//           <button className="hover:text-blue-600">Sell an Item</button>
-//           <button className="hover:text-blue-600">How It Works</button>
-//         </nav>
-
-//         {/* Search Bar */}
-//         <div className="relative flex-1 max-w-md">
-//           <FiSearch className="absolute left-3 top-2.5 text-gray-400" />
-//           <input
-//             type="text"
-//             placeholder="Search for items..."
-//             className="w-full pl-10 pr-4 py-2 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm"
-//           />
-//         </div>
-//       </div>
-
-//       {/* Auth Buttons */}
-//       <div className="flex gap-3 items-center text-sm">
-//         <button className="hover:text-blue-600">Log in</button>
-//         <button className="bg-blue-600 text-white px-4 py-1.5 rounded-md hover:bg-blue-700">
-//           Sign up
-//         </button>
-//         <button className="border border-gray-300 px-4 py-1.5 rounded-md hover:bg-gray-100">
-//           Demo Login
-//         </button>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Navbar;
 
